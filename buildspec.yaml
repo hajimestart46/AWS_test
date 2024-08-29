@@ -4,8 +4,6 @@ phases:
   install:
     runtime-versions:
       nodejs: 16
-    commands:
-      - echo Nothing to do in the install phase...
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
@@ -19,7 +17,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on 'date'
-      - ls -l ./dist/shop/
+      - ls -l dist/shop/
 
 artifacts:
   files:
